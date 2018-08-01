@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14112" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeaturesPricesCell" rowHeight="286" id="KGk-i7-Jjw" customClass="FeaturesPricesCell" customModule="boblyoutline" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="286"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="285.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKQ-Ds-qqW">
+                        <rect key="frame" x="88" y="240" width="145" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="XGU-JP-XAr"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xjH-gu-I9d">
+                        <rect key="frame" x="6" y="11" width="309.5" height="223"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Features:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nre-ld-672">
+                                <rect key="frame" x="0.0" y="0.0" width="309.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="xSK-6N-Y5t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9g-Me-XkC">
+                                <rect key="frame" x="0.0" y="21" width="309.5" height="202"/>
+                                <string key="text">Auto follow (Limited engagement)
+Unfollow (Limited engagement)
+Auto favorite
+Basic Analytics (lock certain features 
+we can discuss what is locked at a later date)
+Only one account can be linked
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xjH-gu-I9d" firstAttribute="centerX" secondItem="kKQ-Ds-qqW" secondAttribute="centerX" id="0yT-Ng-VFz"/>
+                    <constraint firstItem="kKQ-Ds-qqW" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Vjp-2j-6tV"/>
+                    <constraint firstItem="kKQ-Ds-qqW" firstAttribute="top" secondItem="xjH-gu-I9d" secondAttribute="bottom" constant="6" id="W7n-Ww-obu"/>
+                    <constraint firstItem="xjH-gu-I9d" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="g0D-Hh-QnP"/>
+                    <constraint firstItem="kKQ-Ds-qqW" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="r7E-i9-e9t"/>
+                    <constraint firstItem="kKQ-Ds-qqW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="72" id="rLT-cd-7VK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="featuresLabel" destination="I9g-Me-XkC" id="tzK-pz-jJu"/>
+            </connections>
+            <point key="canvasLocation" x="-9" y="244"/>
+        </tableViewCell>
+    </objects>
+</document>

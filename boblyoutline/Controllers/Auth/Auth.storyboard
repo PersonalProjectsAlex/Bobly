@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14112" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bNd-4b-Yw8">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign In-->
+        <scene sceneID="L5d-Ur-kwc">
+            <objects>
+                <viewController id="bNd-4b-Yw8" customClass="SignIn" customModule="boblyoutline" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cFf-F3-Q5Z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8LY-eK-0HO">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="AxA-hl-UiQ">
+                                        <rect key="frame" x="0.0" y="-5" width="320" height="485"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="y8K-6W-BLZ">
+                                        <rect key="frame" x="62" y="81.5" width="197" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="cBF-R4-IVf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9ka-PN-BeJ">
+                                        <rect key="frame" x="110.5" y="223.5" width="100" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O22-aR-5mf">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <state key="normal" backgroundImage="twitterbutton"/>
+                                                <connections>
+                                                    <action selector="SignInAction:" destination="bNd-4b-Yw8" eventType="touchUpInside" id="GS8-HX-x6y"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Wxm-wW-fJM"/>
+                                            <constraint firstAttribute="width" constant="100" id="Y2J-IV-FkR"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3NV-ad-nta">
+                                        <rect key="frame" x="39" y="345" width="243" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="sOw-ei-r4I"/>
+                                        </constraints>
+                                        <string key="text">Click on the icon if you
+want to have Bobly experience</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="AxA-hl-UiQ" firstAttribute="top" secondItem="8LY-eK-0HO" secondAttribute="top" constant="-5" id="7Kt-tB-U0W"/>
+                                    <constraint firstItem="3NV-ad-nta" firstAttribute="top" secondItem="9ka-PN-BeJ" secondAttribute="bottom" constant="21.5" id="F1t-iG-mFg"/>
+                                    <constraint firstItem="y8K-6W-BLZ" firstAttribute="leading" secondItem="3NV-ad-nta" secondAttribute="leading" constant="23" id="LMW-sp-OUW"/>
+                                    <constraint firstItem="y8K-6W-BLZ" firstAttribute="leading" secondItem="8LY-eK-0HO" secondAttribute="leading" constant="62" id="Stn-Nt-sW0"/>
+                                    <constraint firstItem="y8K-6W-BLZ" firstAttribute="trailing" secondItem="3NV-ad-nta" secondAttribute="trailing" constant="-23" id="TOK-UH-DcT"/>
+                                    <constraint firstItem="AxA-hl-UiQ" firstAttribute="leading" secondItem="8LY-eK-0HO" secondAttribute="leading" id="Veg-yT-Amd"/>
+                                    <constraint firstItem="y8K-6W-BLZ" firstAttribute="centerX" secondItem="AxA-hl-UiQ" secondAttribute="centerX" id="VkP-Dl-Pcn"/>
+                                    <constraint firstItem="9ka-PN-BeJ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y8K-6W-BLZ" secondAttribute="bottom" constant="74" id="XKH-5c-WWh"/>
+                                    <constraint firstAttribute="bottom" secondItem="AxA-hl-UiQ" secondAttribute="bottom" id="miq-1F-9vW"/>
+                                    <constraint firstItem="9ka-PN-BeJ" firstAttribute="centerY" secondItem="AxA-hl-UiQ" secondAttribute="centerY" constant="36" id="n32-Sc-dpE"/>
+                                    <constraint firstItem="9ka-PN-BeJ" firstAttribute="centerX" secondItem="3NV-ad-nta" secondAttribute="centerX" id="pRS-yc-A4k"/>
+                                    <constraint firstAttribute="trailing" secondItem="AxA-hl-UiQ" secondAttribute="trailing" id="x33-AE-nBA"/>
+                                    <constraint firstItem="9ka-PN-BeJ" firstAttribute="top" secondItem="y8K-6W-BLZ" secondAttribute="bottom" constant="82" id="yH7-3u-4GO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8LY-eK-0HO" firstAttribute="leading" secondItem="cFf-F3-Q5Z" secondAttribute="leading" id="45q-fT-L5j"/>
+                            <constraint firstItem="8LY-eK-0HO" firstAttribute="bottom" secondItem="yhy-se-r5l" secondAttribute="bottom" id="SDR-PT-gMa"/>
+                            <constraint firstAttribute="trailing" secondItem="8LY-eK-0HO" secondAttribute="trailing" id="jXC-Co-Q0f"/>
+                            <constraint firstItem="8LY-eK-0HO" firstAttribute="top" secondItem="cFf-F3-Q5Z" secondAttribute="top" id="qY8-rn-v9Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yhy-se-r5l"/>
+                    </view>
+                    <connections>
+                        <outlet property="twitterButton" destination="O22-aR-5mf" id="ofn-UA-fjT"/>
+                        <segue destination="oY3-Of-14O" kind="presentation" identifier="SignInToMainControllerSegue" modalTransitionStyle="crossDissolve" id="hTq-9c-ShZ"/>
+                        <segue destination="dsU-vT-OAP" kind="presentation" identifier="SignInToMain2ControllerSegue" modalTransitionStyle="crossDissolve" id="CoH-8b-24V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="96g-e5-Zlb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-56.25" y="127.5"/>
+        </scene>
+        <!--MainPersonal-->
+        <scene sceneID="WvL-kY-ru1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MainPersonal" id="oY3-Of-14O" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ji3-iP-Ykq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="621" y="23"/>
+        </scene>
+        <!--MainProfessional-->
+        <scene sceneID="pHF-HB-YG7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MainProfessional" id="dsU-vT-OAP" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aTa-AX-sUF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="642" y="128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="378" height="672"/>
+        <image name="icon" width="187" height="186"/>
+        <image name="twitterbutton" width="121" height="121"/>
+    </resources>
+</document>

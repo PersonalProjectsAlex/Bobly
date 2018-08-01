@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="guU-Lo-V6J">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="dKC-tq-ZmD">
+            <objects>
+                <viewController id="T2z-f2-BtC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8dr-ya-07C">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="e6t-Xi-Vd3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="1Ql-ay-IoI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tRL-th-iBX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="247" y="-1054"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="TDv-Y2-cxA">
+            <objects>
+                <viewController id="Dxy-ad-pMO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xma-DT-zAP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="EKQ-mc-pJI"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="me9-r5-Xoi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XCL-yK-Hu8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="247" y="-1717"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="U6K-yM-aUo">
+            <objects>
+                <tabBarController id="guU-Lo-V6J" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Den-AE-365">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Dxy-ad-pMO" kind="relationship" relationship="viewControllers" id="LR2-lN-pvv"/>
+                        <segue destination="T2z-f2-BtC" kind="relationship" relationship="viewControllers" id="h2o-FX-sY1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JmE-ro-D4n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-703" y="-1386"/>
+        </scene>
+    </scenes>
+</document>
